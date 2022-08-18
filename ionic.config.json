@@ -1,0 +1,8 @@
+{
+  "name": "Pok\u00e9dex",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "f29fc006"
+}
