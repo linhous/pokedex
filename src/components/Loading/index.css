@@ -1,0 +1,10 @@
+.loading {
+  width: 100%;
+  margin-top: 40px;
+}
+.loading-text {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--ion-color-primary);
+  font-size: 18px;
+}

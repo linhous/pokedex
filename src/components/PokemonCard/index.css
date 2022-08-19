@@ -1,0 +1,129 @@
+.col {
+  padding: 5px;
+}
+
+.card-pokemon {
+  padding-top: 10px;
+  display: grid;
+  justify-content: center;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-pokemon .img {
+  margin: 0;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+}
+
+.card-pokemon h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.card-pokemon p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.card-pokemon .types {
+  margin-bottom: 10px;
+}
+
+.card-pokemon .types span {
+  margin-left: 5px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.card-pokemon .types .grass {
+  background-color: #caf9c0;
+  color: #407735;
+}
+
+.card-pokemon .types .poison {
+  background-color: #e0c2e8;
+  color: #6d3f7a;
+}
+
+.card-pokemon .types .fire {
+  background-color: #f4cda6;
+  color: #cc6a08;
+}
+
+.card-pokemon .types .flying {
+  background-color: #dae1ef;
+  color: #758bb2;
+}
+
+.card-pokemon .types .water {
+  background-color: #bbdaea;
+  color: #2779a3;
+}
+
+.card-pokemon .types .bug {
+  background-color: #deefb3;
+  color: #779b1b;
+}
+
+.card-pokemon .types .normal {
+  background-color: #f4f4f4;
+  color: #7a7979;
+}
+
+.card-pokemon .types .electric {
+  background-color: #f7eec0;
+  color: #af950f;
+}
+
+.card-pokemon .types .ground {
+  background-color: #e5beac;
+  color: #ce5923;
+}
+
+.card-pokemon .types .fairy {
+  background-color: #f7d7ed;
+  color: #ff149d;
+}
+
+.card-pokemon .types .fighting {
+  background-color: #d8abb3;
+  color: #c1304b;
+}
+
+.card-pokemon .types .psychic {
+  background-color: #f9cfe8;
+  color: #bc1677;
+}
+
+.card-pokemon .types .steel {
+  background-color: #c6d3d3;
+  color: #617777;
+}
+
+.card-pokemon .types .ice {
+  background-color: #cdf7f0;
+  color: #0e9e86;
+}
+
+.card-pokemon .types .ghost {
+  background-color: #ccd1e8;
+  color: #4d5a9b;
+}
+
+.card-pokemon .types .rock {
+  background-color: #e0dac7;
+  color: #846d21;
+}
+
+.card-pokemon .types .dragon {
+  background-color: #ced7ed;
+  color: #204299;
+}

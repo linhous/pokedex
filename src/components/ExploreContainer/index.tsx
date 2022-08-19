@@ -8,7 +8,7 @@ const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div className="container">
       <strong>{name}</strong>
-      <p>Show, Hot reload funcionando Renan</p>
+      <p>Disponível em breve...</p>
     </div>
   );
 };
