@@ -1,17 +1,10 @@
 import { useEffect, useState } from "react";
+import IPokemon from "../interfaces/Pokemon";
 import { getPokemons } from "../services";
-
-export interface IPokemonList {
-  id: number;
-  name: string;
-  photo: string;
-  url: string;
-  types: string[];
-}
 
 const useListPokemons = () => {
   const [loading, setLoading] = useState(true);
-  let [listPokemons, setListPokemons] = useState<IPokemonList[]>([]);
+  let [listPokemons, setListPokemons] = useState<IPokemon[]>([]);
 
   useEffect(() => {
     getPokemons()

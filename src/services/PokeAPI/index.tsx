@@ -1,47 +1,45 @@
-import { IPokemonList } from "../../hooks/useListPokemons";
 import { upperFirstLetter } from "../../utils";
 import { Storage } from "@ionic/storage";
+import IPokemon from "../../interfaces/Pokemon";
 
 const getPokemons = async () => {
   const store = new Storage();
   await store.create();
   const tempSt = await store.get("pokemons");
-  let list: IPokemonList[] = [];
+  let list: IPokemon[] = [];
 
   if (tempSt) {
-    return tempSt as IPokemonList[];
+    return tempSt as IPokemon[];
   } else {
     const res = await fetch("https://pokeapi.co/api/v2/pokedex/2/");
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    let pokeData = data.pokemon_entries;
+    let pokeData = [];
 
     //Pegar os dados completos do Pokemon
     //Atualmente, apenas os tipos
-    for (let i = 0; i < pokeData.length; i++) {
-      pokeData[i].types = await getPokemonTypes(pokeData[i]);
+    for (let i = 0; i < data.pokemon_entries.length; i++) {
+      pokeData[i] = await getPokemonDetails(data.pokemon_entries[i]);
     }
 
-    const temp = pokeData.map((poke: any) => {
+    const temp = pokeData.map((poke: IPokemon) => {
       return {
-        id: poke.entry_number,
-        name: upperFirstLetter(poke.pokemon_species.name),
-        photo: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${poke.entry_number.toString()}.png`,
-        url: `https://pokeapi.co/api/v2/pokemon/${poke.entry_number.toString()}/`,
+        ...poke,
+        name: upperFirstLetter(poke.name),
         types: poke.types,
       };
     });
 
-    list = temp as IPokemonList[];
+    list = temp as IPokemon[];
     await store.set("pokemons", list);
 
     return list;
   }
 };
 
-const getPokemonTypes = async (poke: any) => {
+const getPokemonDetails = async (poke: any) => {
   const res = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${poke.entry_number}/`
   );
@@ -52,7 +50,8 @@ const getPokemonTypes = async (poke: any) => {
   if (types.length === 1) {
     types[1] = types[0];
   }
-  return types;
+  details.types = types;
+  return details;
 };
 
 export { getPokemons };

@@ -8,14 +8,14 @@ import {
 import { useEffect, useState } from "react";
 import { AppShell, Loading, PokemonCard } from "../../components";
 import { useListPokemons } from "../../hooks";
-import { IPokemonList } from "../../hooks/useListPokemons";
+import IPokemon from "../../interfaces/Pokemon";
 import "./index.css";
 
 const Home = () => {
   const [searchText, setSearchText] = useState("");
   const { loading, setLoading, listPokemons } = useListPokemons();
   const [presentAlert] = useIonAlert();
-  const [filterList, setFilterList] = useState<IPokemonList[]>([]);
+  const [filterList, setFilterList] = useState<IPokemon[]>([]);
 
   const moreDetails = () => {
     presentAlert({

@@ -1,10 +1,10 @@
 import { IonCol } from "@ionic/react";
-import { IPokemonList } from "../../hooks/useListPokemons";
+import IPokemon from "../../interfaces/Pokemon";
 import { threeNumbers } from "../../utils";
 import "./index.css";
 
 interface IPokemonCard {
-  poke: IPokemonList;
+  poke: IPokemon;
   callBack: () => void;
 }
 
@@ -32,7 +32,7 @@ const PokemonCard = ({ poke, callBack }: IPokemonCard) => {
         <div
           className="img"
           style={{
-            backgroundImage: `url(${poke.photo})`,
+            backgroundImage: `url(${poke.sprites.other.home.front_default})`,
             backgroundSize: "contain",
           }}
         ></div>
