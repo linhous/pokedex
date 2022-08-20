@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.foxtag.pokedex;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -1,6 +1,8 @@
 {
-  "short_name": "Ionic App",
-  "name": "My Ionic App",
+  "short_name": "Pokédex",
+  "name": "Pokédex - Foxtag",
+  "description": "Um projeto Foxtag",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "assets/icon/favicon.png",
@@ -16,6 +18,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "theme_color": "#D1092B",
+  "background_color": "#D1092B"
 }

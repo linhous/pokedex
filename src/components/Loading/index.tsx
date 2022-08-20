@@ -4,7 +4,7 @@ import "./index.css";
 const Loading = () => {
   return (
     <div className="loading">
-      <IonProgressBar value={0.99} />
+      <IonProgressBar type="indeterminate" />
       <div className="loading-text">
         Aguarde, carregando...
         <br />

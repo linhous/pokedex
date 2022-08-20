@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "Pokédex",
-	"webDir": "build",
-	"bundledWebRuntime": false
+  "appId": "com.foxtag.pokedex",
+  "appName": "Pokédex",
+  "webDir": "build",
+  "bundledWebRuntime": true
 }

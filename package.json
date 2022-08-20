@@ -71,5 +71,5 @@
     "@ionic/cli": "6.20.1",
     "cordova-res": "0.15.4"
   },
-  "description": "An Ionic project"
+  "description": "A Foxtag project"
 }
