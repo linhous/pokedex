@@ -4,7 +4,11 @@
 
 Uma simples pokédex daa região de Kanto, reveja seus pokémons favoritos com sprites detalhadas e renovadas.
 
-## 🎬 <a href="https://pokedex.foxtag.com.br">Ver a Desmonstração</a>
+## 🎬 <a href="https://pokedex.foxtag.com.br" target="_blank">Ver a Desmonstração</a>
+
+ <p align="center">
+  <a src="https://pokedex.foxtag.com.br" target="_blank"><img height="600px" width="auto" src="./resources/cover.png" width="100%" height="auto" /></a>
+</p>
 
 ## ❓ Intuito do projeto
 
