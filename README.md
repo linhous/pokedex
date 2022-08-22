@@ -2,7 +2,7 @@
 
 [![ionic](https://img.shields.io/badge/Ionic-5693EF?style=for-the-badge&logo=ionic&logoColor=ffffff)](https://ionicframework.com/) [![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://pt-br.reactjs.org/) [![capacitor](https://img.shields.io/badge/capacitor-8F61EC?style=for-the-badge&logo=capacitor&logoColor=white)](https://capacitorjs.com/)
 
-Uma simples pokédex daa região de Kanto, reveja seus pokémons favoritos com sprites detalhadas e renovadas.
+Uma simples pokédex da região de Kanto, reveja seus pokémons favoritos com sprites detalhadas e renovadas. Aplicativo criado com Ionic e React.
 
 ## 🎬 <a href="https://pokedex.foxtag.com.br" target="_blank">Ver a Desmonstração</a>
 
